@@ -1,0 +1,290 @@
+/* Basic reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Background gradient */
+body {
+    background: linear-gradient(135deg, #c8e236 0%, #98accf 100%);
+    font-family: Arial, sans-serif;
+    color: white;
+}
+
+/* Sidebar styling */
+.sidebar {
+    width: 250px;
+    height: 100vh;
+    background-color: #4b2354;
+    padding: 20px;
+    position: fixed;
+}
+
+.sidebar h2 {
+    color: white;
+    margin-bottom: 20px;
+}
+
+.sidebar .nav-link {
+    color: #ddd;
+    font-size: 1rem;
+    margin: 10px 0;
+    padding: 10px;
+    display: block;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #6b4572;
+    color: #fff;
+    border-radius: 5px;
+}
+
+/* Submenu styling */
+.submenu {
+    display: none;
+    list-style-type: none;
+    padding-left: 20px;
+    margin-top: 5px;
+}
+
+/* Show submenu when active class is added */
+.nav-item .active + .submenu {
+    display: block;
+}
+
+.submenu li a {
+    color: #ccc;
+    font-size: 0.9rem;
+    padding: 5px 0;
+    display: block;
+}
+
+.submenu .sub-link:hover {
+    background-color: #6b4572;
+    border-radius: 5px;
+    color: #fff;
+    padding: 5px;
+    text-decoration: none;
+}
+/* Main content styling */
+/* .main-content {
+    margin-left: 250px;
+    padding: 20px;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+} */
+
+/* Main content styling */
+.main-content {
+    margin-left: 250px; /* Căn lề cho sidebar */
+    padding: 20px;
+    min-height: 100vh;
+    display: block; /* Thay flex bằng block để tránh dàn đều không cần thiết */
+}
+
+/* Navbar styling */
+.navbar {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+    position: sticky; /* Giữ navbar ở đầu khi cuộn */
+    top: 0;
+    z-index: 10;
+}
+
+/* Navbar styling */
+/* .navbar {
+    background-color: rgba(255, 255, 255, 0.1);
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-radius: 5px;
+} */
+
+.navbar .navbar-text {
+    font-size: 1.2rem;
+    color: #333;
+}
+
+/* chỉnh tài khoản admin*/
+.user-info {
+    display: flex;
+    align-items: center;
+}
+
+.user-info input[type="text"] {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: none;
+    border-radius: 5px;
+    padding: 5px 10px;
+    margin-right: 10px;
+    color: #333;
+}
+
+.user-info input[type="text"]::placeholder {
+    color: #333;
+}
+
+.user-profile {
+    display: flex;
+    align-items: center;
+    color: #333;
+}
+
+.user-profile img {
+    border-radius: 50%;
+    margin-right: 5px;
+}
+
+/* Content styling */
+.content {
+    margin-top: 20px;
+    color: #333;
+    opacity: 0.8;
+}
+
+.content p {
+    font-size: 0.9rem;
+}
+
+/* Form styling */
+
+.form-group .d-flex {
+    gap: 15px;
+}
+
+.form-check {
+    margin-bottom: 10px;
+}
+
+/* Phần CSS Table và các thành phần của nó */
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background: white;
+    color: #333;
+    border-radius: 5px;
+    overflow: hidden;
+    text-align: left;
+}
+
+.table th,
+.table td {
+    padding: 10px;
+    border: 1px solid #ddd;
+}
+
+.table th {
+    background-color: #4b2354;
+    color: white;
+    font-weight: bold;
+}
+
+.table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.table tr:hover {
+    background-color: #f1f1f1;
+}
+
+.btn-sm {
+    font-size: 0.875rem;
+    padding: 5px 10px;
+    margin-right: 5px;
+}
+/* Phần CSS Table và các thành phần của nó */
+
+/* Phần Pagination và các thành phần của nó */
+.pagination-container {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+
+.pagination {
+    list-style: none;
+    display: flex;
+    padding: 0;
+}
+
+.pagination .page-item {
+    margin: 0 5px;
+}
+
+.pagination .page-link {
+    color: #4b2354;
+    text-decoration: none;
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    font-size: 0.9rem;
+}
+
+.pagination .page-link:hover {
+    background-color: #4b2354;
+    color: #fff;
+    text-decoration: none;
+}
+
+/* Phần Pagination và các thành phần của nó */
+
+/* Phần Dashboard và các thành phần của nó */
+.dashboard {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+
+.card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    text-align: center;
+}
+
+.card i {
+    font-size: 36px;
+    margin-bottom: 15px;
+}
+
+.card h3 {
+    margin: 10px 0;
+    font-size: 24px;
+}
+
+.card p {
+    color: #666;
+    font-size: 16px;
+}
+
+.orders {
+    background-color: #ffd966;
+    color: #8a6d00;
+}
+
+.users {
+    background-color: #6fa8dc;
+    color: #084c61;
+}
+
+.products {
+    background-color: #f6b26b;
+    color: #b45f06;
+}
+
+.revenue {
+    background-color: #e06666;
+    color: #990000;
+}
+/* Phần Dashboard và các thành phần của nó */
