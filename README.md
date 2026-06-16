@@ -6,9 +6,9 @@ The system also includes a complete **Admin Dashboard** for managing books, auth
 
 ---
 
-## ✨ Features
+##  Features
 
-### 👤 Customer Features
+### Customer Features
 
 * Browse books with pagination
 * Search books by title
@@ -30,7 +30,7 @@ The system also includes a complete **Admin Dashboard** for managing books, auth
 
 ---
 
-### 🛠 Administrator Features
+### Administrator Features
 
 * Dashboard statistics
 * Book management (CRUD)
@@ -44,7 +44,7 @@ The system also includes a complete **Admin Dashboard** for managing books, auth
 
 ---
 
-## 🏗 System Architecture
+## System Architecture
 
 ```text
 Client Browser
@@ -64,7 +64,7 @@ MySQL Database
 
 ---
 
-## 🖼 Screenshots
+## Screenshots
 
 | Home Page                 | Shop Page                 |
 | ------------------------- | ------------------------- |
@@ -72,7 +72,7 @@ MySQL Database
 
 | Quick Cart                | Book Detail                      |
 | ------------------------- | -------------------------------- |
-| <img width="1918" height="908" alt="Image" src="https://github.com/user-attachments/assets/2715ebb0-bae8-4115-b7e0-b8a34d04dad1" /> | <img width="1917" height="911" alt="Image" src="https://github.com/user-attachments/assets/3827df2a-3025-4bb7-90dd-90e31222edd5" /> |
+| <img width="1918" height="908" alt="Image" src="https://github.com/user-attachments/assets/2715ebb0-bae8-4115-b7e0-b8a34d04dad1" /> | <img width="1913" height="911" alt="Image" src="https://github.com/user-attachments/assets/e328e057-40c1-460f-b982-f39880d8468a" /> |
 
 | User Login                 | User Account                 |
 | -------------------------- | ---------------------------- |
@@ -84,7 +84,7 @@ MySQL Database
 
 ---
 
-## 💻 Technologies
+## Technologies
 
 | Category        | Technology                    |
 | --------------- | ----------------------------- |
@@ -97,7 +97,7 @@ MySQL Database
 
 ---
 
-## ⚙ Installation & Run
+## Installation & Run
 
 ### 1. Clone Repository
 
@@ -237,7 +237,7 @@ docs/
 
 ---
 
-## 🗄 Database Design
+## Database Design
 
 ### Main Entities
 
@@ -269,7 +269,7 @@ User
 
 ---
 
-## 🔒 Security
+## Security
 
 * Authentication Middleware
 * Admin Middleware
@@ -280,7 +280,7 @@ User
 
 ---
 
-## 🙏 Acknowledgements
+## Acknowledgements
 
 This project was developed using the **Laravel Framework**.
 
